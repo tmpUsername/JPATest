@@ -19,6 +19,12 @@ import javax.persistence.Id;
 @Entity
 public class Util implements Serializable {
 
+    public enum UtilType {
+        NORMAL,
+        MODERATEUR,
+        ADMIN
+    }
+    
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
