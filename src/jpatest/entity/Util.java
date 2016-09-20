@@ -33,6 +33,8 @@ public class Util implements Serializable {
     private String login;
     @Column(length = 32, nullable = false)
     private String mdp;
+    @Column(nullable = false)
+    private UtilType type;
     
     public Long getId() {
         return id;
